@@ -135,12 +135,18 @@ body {
   width: 100%;
 }
 
+.heading-secondary,
+.heading-primary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  color: #45260a;
+  letter-spacing: -0.5px;
+}
+
 .heading-primary {
   font-size: 5.2rem;
-  font-weight: 700;
   line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
 
@@ -221,3 +227,92 @@ body {
 }
 
 /* ********************************* */
+
+/* ******** */
+/* section how */
+/* ******** */
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.step-image {
+  width: 35%;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-image-box::before {
+  content: "";
+  display: block;
+  width: 60%;
+  padding-bottom: 60%;
+  /* height: 60%; */
+  background-color: #fdf2e9;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.step-image-box::after {
+  content: "";
+  display: block;
+  width: 45%;
+  padding-bottom: 45%;
+  /* height: 60%; */
+  background-color: #fae5d3;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
