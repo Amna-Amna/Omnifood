@@ -832,6 +832,7 @@ footer {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 4rem;
+  margin-top: 0;
 }
 
 .footer-nav {
@@ -852,4 +853,8 @@ footer {
 .footer-link:hover,
 .footer-link:active {
   color: #555;
+}
+
+.nav-col {
+  padding-bottom: 10px;
 }
