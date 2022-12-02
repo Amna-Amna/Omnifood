@@ -49,6 +49,7 @@ SPACING SYSTEM (px)
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -56,6 +57,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 /* ********************************* */
 
@@ -69,17 +71,43 @@ body {
   height: 9.6rem;
   /* using height instea of padding ot make header sticky later */
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
   height: 2.2rem;
 }
 
+/* **************************************  */
+
+/* MOBILE */
+
+/* **************************************  */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* NAVIGATION */
+
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -447,6 +475,7 @@ strong {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .margin-botton-md {
