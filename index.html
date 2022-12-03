@@ -596,14 +596,13 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form" name="sign-up" netlify>
+              <form class="cta-form" action="#">
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     id="full-name"
                     type="text"
                     placeholder="Amna Amna"
-                    name="full-name"
                     required
                   />
                 </div>
@@ -614,15 +613,13 @@
                     id="email"
                     type="email"
                     placeholder="me@example.com"
-                    name="email"
                     required
                   />
                 </div>
 
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-
-                  <select id="select-where" name="select-where" required>
+                  <select id="select-where" required>
                     <option value="">Please choose one option</option>
                     <option value="Friends">Family and friends</option>
                     <option value="Youtube">Youtube</option>
@@ -649,14 +646,12 @@
       </section>
     </main>
 
-    
-
     <footer class="footer">
       <div class="container grid grid--footer">
         <div class="logo-col">
           <a href="#" class="footer-logo">
-            <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
-          </a>
+            <img class="logo" src="./img/omnifood-logo.png" alt="Omnifood logo"
+          /></a>
 
           <ul class="social-links">
             <li>
@@ -677,25 +672,31 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; <span class="year">2027 </span> by Omnifood, Inc.
-            All rights reserved.
+            Copyright &copy;<span class="year">2000</span> by Omnifood, Inc. All
+            rights reserved
           </p>
         </div>
         <div class="address-col">
           <p class="footer-heading">Contact us</p>
           <address class="contacts">
             <p class="address">
-              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+              Address: 623 Harrison St., 2nd Floor, San Francisco, CA 94107
             </p>
             <p>
-              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
-              ><br />
-              <a class="footer-link" href="mailto:hello@omnifood.com"
-                >hello@omnifood.com</a
+              <a
+                class="footer-link"
+                href="tel:
+            415-201-6370"
+              >
+                415-201-6370</a
+              >
+              <a class="footer-link" href="mailto: hello@omnifood.com">
+                hello@omnifood.com</a
               >
             </p>
           </address>
         </div>
+
         <nav class="nav-col">
           <p class="footer-heading">Account</p>
           <ul class="footer-nav">
@@ -707,10 +708,14 @@
         </nav>
 
         <nav class="nav-col">
-          <p class="footer-heading">Company</p>
+          <p class="footer-heading">Compant</p>
           <ul class="footer-nav">
             <li><a class="footer-link" href="#">About Omnifood</a></li>
-            <li><a class="footer-link" href="#">For Business</a></li>
+            <li>
+              <a class="footer-link" class="footer-link" href="#"
+                >For Business</a
+              >
+            </li>
             <li><a class="footer-link" href="#">Cooking partners</a></li>
             <li><a class="footer-link" href="#">Careers</a></li>
           </ul>
@@ -719,9 +724,9 @@
         <nav class="nav-col">
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Recipe directory </a></li>
+            <li><a class="footer-link" href="#">Recipe directory</a></li>
             <li><a class="footer-link" href="#">Help center</a></li>
-            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            <li><a class="footer-link" href="#">Privacy</a></li>
           </ul>
         </nav>
       </div>
